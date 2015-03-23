@@ -23,25 +23,26 @@ var
 /***
  * Paths 
  **/
-var paths = {
-	css: ['app/assets/css/**/*.css'],
-	js: ['app/assets/js/**/*.js'],
-	vendor: {
-		css: [
-			'app/assets/vendor/fontawesome/css/font-awesome.css',
-			'app/assets/vendor/select2/select2.css'
-		],
-		fonts: [
-			'app/assets/vendor/fontawesome/fonts/**/*.{ttf,woff,eof,svg}'
-		],
-		images: [
-			'app/assets/vendor/select2/**/*.{png,gif,jpg,jpeg}'
-		],
-		js: [
-			'app/assets/vendor/select2/select2.js'
-		]
-	}
-};
+var 
+    paths = {
+        css: ['app/assets/css/**/*.css'],
+        js: ['app/assets/js/**/*.js'],
+        vendor: {
+            css: [
+                'app/assets/vendor/fontawesome/css/font-awesome.css',
+                'app/assets/vendor/select2/select2.css'
+            ],
+            fonts: [
+                'app/assets/vendor/fontawesome/fonts/**/*.{ttf,woff,eof,svg}'
+            ],
+            images: [
+                'app/assets/vendor/select2/**/*.{png,gif,jpg,jpeg}'
+            ],
+            js: [
+                'app/assets/vendor/select2/select2.js'
+            ]
+        }
+      };
 
 /***
  * General 
@@ -115,7 +116,7 @@ gulp.task('vendor:fonts', function() {
 });
 
 /***
- * Main Tasks 
+ * Main Tasks
  **/
 gulp.task('watch', function() {
 	livereload.listen();
